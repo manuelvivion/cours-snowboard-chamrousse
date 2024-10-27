@@ -209,7 +209,8 @@ include("config_lang.php");
             d[l](f, ...n))
     })
     ({
-        key: "AIzaSyAO-T3UvQvlv3dsvKrLvHbsNpine2ZLA2E",
+
+        key: <?php include 'env/api-map.php';?>,
         v: "beta"
     });
     </script>
