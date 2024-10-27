@@ -1,0 +1,650 @@
+$bleu-5 : #0d6efd; /*primary bootstrap*/
+$bleu-1 : lighten($bleu-5,40%);
+$bleu-2 : lighten($bleu-5,30%);
+$bleu-3 : lighten($bleu-5,20%);
+$bleu-4 : lighten($bleu-5,10%);
+$bleu-6 : darken($bleu-5,10%);
+$bleu-7 : darken($bleu-5,20%);
+$bleu-8 : darken($bleu-5,30%);
+$bleu-9 : darken($bleu-5,40%);
+$bleu-10 : darken($bleu-5,50%);
+$bleu-ciel : #87CEEB;
+
+
+
+$gris-base : hsl(0, 0%, 50%);
+$gris-1 : lighten($gris-base,40%);
+$gris-2 : lighten($gris-base,30%);
+$gris-3 : lighten($gris-base,20%);
+$gris-4 : lighten($gris-base,10%);
+$gris-5:$gris-base;
+$gris-6 : darken($gris-base,10%);
+$gris-7 : darken($gris-base,20%);
+$gris-8 : darken($gris-base,30%);
+$gris-9 : darken($gris-base,40%);
+$gris-10 : darken($gris-base,50%);
+
+$color-gr-1:rgba(30,30,30,1);
+$color-gr-2:rgba(140,140,140,1);
+$color-gr-3:rgba(170,170,170,1);
+$color-gr-4:rgba(240,240,240,1);
+$color-gr-5:rgba(200,230,240,1);
+$color-gr-6:rgba(80,140,210,1);
+$color-gr-7:rgba(200,230,240,1);
+$color-gr-8:rgba(245,190,45,1);
+$color-gr-9:rgba(180,65,10,1);
+$color-gr-10:rgba(0,0,0,1);
+
+$breakpoint1 : 750px;
+$breakpoint2 : 590px;
+
+header{
+    position:relative;
+}
+nav{
+    position:sticky;
+    top:0px;
+}
+
+body{
+    background-color:#131313;
+    background-image: url('../images/bckgrnd1.jpg');
+    position: relative;
+    p,li,h5,h6{
+        font-family: "Quicksand", sans-serif;
+    }
+    
+}
+
+.justified{
+    text-align: justify;
+}
+
+
+.intro{
+    background-color: black;
+}
+
+.bg__centre--noir{
+    background-color: black;
+}
+
+.img-csc-moniteur{
+    width:80%;
+    max-width:480px;
+    margin:auto;
+}
+
+.navbar{
+    background-color: black;
+    
+
+    .open-menu{
+        color:$bleu-4;
+    }
+    .btn{
+        font-family: "Roboto", sans-serif;
+        color:#bbb;
+        transition: .12s all;
+        &:hover{
+            transform:scale(1.05);
+            color:$gris-3;
+        }
+        &-gauche{
+            color:$bleu-4;
+            //background-color: #111;
+            padding:8px 16px !important;
+        }
+        &-droite{
+            background-color: $gris-9;
+
+            //border-bottom: 1px solid $bleu-4;
+        }
+        &:focus,&:active { //remove blue outline when clicked
+            outline: none !important;
+            box-shadow: none;
+         }
+    }
+    
+
+}
+
+section{
+    h3{
+        text-transform: uppercase;
+    }
+    p{
+        text-align: justify;
+    }
+    h5{
+        text-decoration:underline;
+    }
+}
+
+
+
+.section{
+    &-intro,&-cours,&-exclu,&-niveaux,&-coaching,&-split,&-tarifs, &-contacts{
+        width:66%;
+        margin:16px auto;
+        padding:16px;
+        //background-color: #141414;
+        background: linear-gradient(120deg,#141414,#202020);
+        border-radius: 4px;
+        border:1px solid #202020;
+
+        p,a,h5,h6{
+            color:$gris-2;
+        }
+
+        /* Responsive */
+        @media screen and (max-width:$breakpoint1){
+            width:80%;
+        }
+        @media screen and (max-width:$breakpoint2){
+            width:90%;
+            padding:8px;
+        }
+    }
+
+    &-intro{
+
+        
+        h1{
+            background: linear-gradient(120deg,#2fa9f3,#2fa9f3, #92f0fe, #92f0fe);
+           // background: -webkit-linear-gradient(#eee, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 16px 32px;
+            text-transform: uppercase;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'PRIMETIME', sans-serif;
+            @media screen and (max-width:$breakpoint2){
+                margin: 8px;
+            }
+            span{
+                text-align: center;
+
+                &:nth-child(1){ //Ecole de snowboard
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    letter-spacing: 0.3em;
+                    i{ 
+                        &:nth-child(1){
+                            font-size: 30px;
+                            @media screen and (max-width:$breakpoint2){
+                                font-size: 25px;
+                                letter-spacing: 0.1em;
+                            }
+                        }
+                        &:nth-child(2){
+                            font-size: 20px;
+                            margin-top:8px;
+                            @media screen and (max-width:$breakpoint2){
+                                font-size: 15px;
+                                letter-spacing: 0.1em;
+                            }
+                        }
+                        &:nth-child(3){
+                            font-size: 40px;
+                            @media screen and (max-width:$breakpoint2){
+                                font-size: 34px;
+                                letter-spacing: 0.1em;
+                            }
+                        }
+                    }
+
+                }
+                
+                &:nth-child(2){ //Gabriel Bessy
+                    font-size: 20px;
+                    margin-top:16px;
+                    margin-bottom:8px;
+                    font-family: 'PRIMETIME', sans-serif;
+                    @media screen and (max-width:$breakpoint2){
+                        font-size: 14px;
+                    }
+                                                
+                }
+                &:nth-child(3){ //moniteur de snowboard
+                    font-size: 30px;
+                    font-family: 'Muro', sans-serif;
+                    @media screen and (max-width:$breakpoint2){
+                        font-size: 18px;
+                    }
+                                                
+                }
+            }
+        }
+        &-infos{ //3 blocs infos
+            display: flex;
+            flex-direction: column;
+            padding:16px;
+            margin-top:16px;
+            &-ligne{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border-bottom: 1px solid $gris-8;
+                margin-bottom: 16px;
+                &-picto,&-texte{
+                    padding:8px;
+                }
+                &-picto{
+                    width:34%;
+                }
+                &-texte{
+                    width:66%;
+                }
+                @media screen and (max-width:$breakpoint2){
+                    flex-direction: column;
+                    &-picto,&-texte{
+                        padding:0px;
+                        margin:0px;
+                    }
+                    &-picto{
+                        width:50%;
+                    }
+                    &-texte{
+                        width:100%;
+                    }
+                }
+            }
+
+        }
+        &-photos{
+            img{
+                border-radius: 2px;
+                cursor: pointer;
+            }
+            &-ligne{
+                &-1{
+                    max-height: 500px;
+                    img{
+                        width:100%;
+                        height:100%;
+                        max-height: 500px;
+                        object-fit: cover;
+        
+                    }
+                    margin-bottom: 16px;
+
+                }
+                &-2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    img{
+                        width:48%;
+        
+                    }
+
+                }
+            
+            }
+        }
+    }
+
+    &-cours,&-exclu,&-niveaux,&-coaching,&-split,&-tarifs, &-contacts{ //props communes à toutes les sections apres intro
+        margin-top: 128px;
+        &-titre{
+            //border gradient
+            border: 10px solid;
+            border-image-slice: 1;
+            border-width: 6px;
+            border-image-source: linear-gradient(to right, #2fa9f3, #92f0fe);
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            //fin boder-gradient
+            
+            margin-top: -19px;
+            h2{
+                //color:#2fa9f3/* , #92f0fe */;
+                color:#92f0fe ;
+                text-align: center;
+                //font-family: 'Lalezar', sans-serif;
+                font-family: "Lalezar", system-ui;
+                font-size : 38px;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                line-height: 38px;
+                margin-top: 8px;
+                /* span{
+                    font-family: 'Muro', sans-serif;
+                    font-size : 34px;
+                    //font-weight:900;
+                    margin:0px;
+                    //text-decoration: underline;
+                } */
+            }
+            
+        }
+
+        &-infos{
+            margin-top:16px;
+        }
+
+        h3{
+            color:#2fa9f3/* , #92f0fe */ ;
+        }
+
+        img{
+            cursor: pointer;
+        }
+
+        p{
+            span{
+                color:#92f0fe;
+                font-weight: 500;
+            }
+        }
+        
+    } //fin props communes
+
+    &-cours{
+       
+        &-infos{
+            i{
+                //color:$color-gr-7 !important;
+                color:#2fa9f3/* , #92f0fe */ !important;
+            }
+            li{
+                color:white !important;
+            }
+        }
+
+    }
+
+   
+
+    &-niveaux{
+       
+        &-infos{
+            padding-top:8px;
+            article{
+                margin-top:16px;
+            }
+        }
+        h3{
+            font-family: 'MURO', sans-serif;
+            letter-spacing: 0.1em;
+            margin:0px;
+            text-align: center;
+        }
+
+    }
+
+    &-tarifs{
+       
+        &-infos{
+            //padding-top:8px;
+            article{
+                margin-top:16px;
+                p{
+                    border-bottom: 1px solid white;
+                    font-size:18px;
+                }
+                table{
+                    color:#92f0fe;
+                    width:100%;
+                    
+                    tr{
+                        td{
+                            text-align: right;
+                            width:50%;
+                        }
+                        
+                        :nth-child(2){
+                            color:white ;
+                        border-bottom: 1px dotted #92f0fe;
+                        }
+                        th{
+                            color:#bbb !important;
+                            text-align: right;
+                            width:50%;
+                            
+                        }
+                    }
+                    
+                }
+                pre{
+                    color:#bbb;
+                }
+            }
+        }
+
+       
+        
+
+    }
+    &-contacts{
+        &-infos{
+
+            article{
+                h5,h6{
+                    color:white !important;
+                }
+            }
+        }
+    }
+}
+
+.sunset{
+    width:66%;
+        margin:16px auto;
+        padding:16px;
+        border-radius: 4px;
+        //border:1px solid #202020;
+        background: linear-gradient(to bottom,$color-gr-6,$color-gr-7,$color-gr-8,$color-gr-9,$color-gr-10);
+        padding:96px 32px;
+
+        /* Responsive */
+        @media screen and (max-width:$breakpoint1){
+            width:80%;
+        }
+        @media screen and (max-width:$breakpoint2){
+            width:90%;
+        }
+   
+    article{
+        border :1px solid rgba(255, 255, 255, 0.644);
+        border-radius: 4px;
+        padding:16px;
+
+        h3{
+            font-family: "Lalezar", system-ui;
+                font-size : 28px;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            color:black !important;
+            margin-bottom:16px;
+            text-align: center;
+        }
+        p{
+            color: #222;
+            font-weight: 500;
+        }
+        img{ //pictos formations
+            height:80px;
+            filter: saturate(0);
+            filter: brightness(20%);
+        }
+    }
+
+}
+
+.ancre-deportee{
+    margin-bottom: 128px;
+
+}
+
+/* #bal_cours{
+    h3{
+        color:$gris-3
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-1, $color-gr-2);
+        }
+        h4,i{
+            color:white;
+        }
+        p{
+            color:$gris-2;
+        }
+        li{
+            color:$bleu-ciel;
+        }
+    }
+}
+
+#bal_3ans{
+    h3{
+        color:$color-gr-3
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-3, $color-gr-4);
+        }
+        p{
+            color:$gris-8;
+        }
+        
+    }
+} */
+
+/* #bal_niveaux{
+    h3{
+        color:$color-gr-4
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-4, $color-gr-5);
+            p,h5{
+                color:$gris-8;
+            }
+        }
+        p{
+            color:$gris-2;
+        }
+        h5{
+            text-transform: uppercase;
+            color : $bleu-ciel
+        }
+        
+    }
+}
+
+#bal_gallerie{
+    h3{
+        color:$color-gr-5
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-5, $color-gr-6);
+            p{
+                color:$gris-9;
+            }
+        }
+        
+    }
+} */
+
+/* #bal_split{
+    h3{
+        color:$color-gr-6
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-6, $color-gr-7, $color-gr-8, $color-gr-9);
+            p{
+                color:$gris-9;
+            }
+        }
+        
+    }
+    .zone-infos-prepa{
+        .row{
+            img{
+                width: 50%;
+                max-width:80px;
+            }
+            
+        }
+        .txt-prepa{
+            border-top: 1px solid $color-gr-8;
+            background-color: $gris-9;
+            color : mix($color-gr-8,$color-gr-9,70%);
+        }
+    }
+}
+
+#bal_tarifs{
+    h3{
+        color:$color-gr-9
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-9, $color-gr-10, $color-gr-10);
+            p{
+                color:$gris-3;
+                display: block;
+                border-bottom: 1px solid $gris-3;
+            }
+        }
+        table{
+            width: 100%;
+            td{
+                width:50%;
+                color : lighten($color-gr-8,20%);
+                &:nth-child(2){
+                    border-bottom: 1px dashed $gris-5;
+                }
+            }
+            th{
+                color : $gris-2;
+            }
+        }
+        tr{
+            width:100%;
+            text-align: right;
+        }
+        pre{
+            text-align: right;
+            color:$gris-4;
+        }
+    }
+    
+}
+
+#bal_contacts{
+    h3{
+        color:$gris-8
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-4, $color-gr-6);
+            p,a{
+                color:$gris-8;
+            }
+            h5{
+                text-decoration: none;
+            }
+            h3{
+                text-decoration: underline;
+                padding-bottom: 20px;
+            }
+        }
+        
+    }
+    
+}
+ */
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+}

@@ -1,0 +1,534 @@
+/*primary bootstrap*/
+header {
+  position: relative;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+}
+
+body {
+  background-color: #131313;
+  background-image: url("../images/bckgrnd1.jpg");
+  position: relative;
+}
+body p, body li, body h5, body h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.intro {
+  background-color: black;
+}
+
+.bg__centre--noir {
+  background-color: black;
+}
+
+.img-csc-moniteur {
+  width: 80%;
+  max-width: 480px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar .open-menu {
+  color: #408cfd;
+}
+.navbar .btn {
+  font-family: "Roboto", sans-serif;
+  color: #bbb;
+  transition: 0.12s all;
+}
+.navbar .btn:hover {
+  transform: scale(1.05);
+  color: #b3b3b3;
+}
+.navbar .btn-gauche {
+  color: #408cfd;
+  padding: 8px 16px !important;
+}
+.navbar .btn-droite {
+  background-color: #1a1a1a;
+}
+.navbar .btn:focus, .navbar .btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+section h3 {
+  text-transform: uppercase;
+}
+section p {
+  text-align: justify;
+}
+section h5 {
+  text-decoration: underline;
+}
+
+.section-intro, .section-cours, .section-exclu, .section-niveaux, .section-coaching, .section-split, .section-tarifs, .section-contacts {
+  width: 66%;
+  margin: 16px auto;
+  padding: 16px;
+  background: linear-gradient(120deg, #141414, #202020);
+  border-radius: 4px;
+  border: 1px solid #202020;
+  /* Responsive */
+}
+.section-intro p, .section-intro a, .section-intro h5, .section-intro h6, .section-cours p, .section-cours a, .section-cours h5, .section-cours h6, .section-exclu p, .section-exclu a, .section-exclu h5, .section-exclu h6, .section-niveaux p, .section-niveaux a, .section-niveaux h5, .section-niveaux h6, .section-coaching p, .section-coaching a, .section-coaching h5, .section-coaching h6, .section-split p, .section-split a, .section-split h5, .section-split h6, .section-tarifs p, .section-tarifs a, .section-tarifs h5, .section-tarifs h6, .section-contacts p, .section-contacts a, .section-contacts h5, .section-contacts h6 {
+  color: #cccccc;
+}
+@media screen and (max-width: 750px) {
+  .section-intro, .section-cours, .section-exclu, .section-niveaux, .section-coaching, .section-split, .section-tarifs, .section-contacts {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .section-intro, .section-cours, .section-exclu, .section-niveaux, .section-coaching, .section-split, .section-tarifs, .section-contacts {
+    width: 90%;
+    padding: 8px;
+  }
+}
+.section-intro h1 {
+  background: linear-gradient(120deg, #2fa9f3, #2fa9f3, #92f0fe, #92f0fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 16px 32px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "PRIMETIME", sans-serif;
+}
+@media screen and (max-width: 590px) {
+  .section-intro h1 {
+    margin: 8px;
+  }
+}
+.section-intro h1 span {
+  text-align: center;
+}
+.section-intro h1 span:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.3em;
+}
+.section-intro h1 span:nth-child(1) i:nth-child(1) {
+  font-size: 30px;
+}
+@media screen and (max-width: 590px) {
+  .section-intro h1 span:nth-child(1) i:nth-child(1) {
+    font-size: 25px;
+    letter-spacing: 0.1em;
+  }
+}
+.section-intro h1 span:nth-child(1) i:nth-child(2) {
+  font-size: 20px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 590px) {
+  .section-intro h1 span:nth-child(1) i:nth-child(2) {
+    font-size: 15px;
+    letter-spacing: 0.1em;
+  }
+}
+.section-intro h1 span:nth-child(1) i:nth-child(3) {
+  font-size: 40px;
+}
+@media screen and (max-width: 590px) {
+  .section-intro h1 span:nth-child(1) i:nth-child(3) {
+    font-size: 34px;
+    letter-spacing: 0.1em;
+  }
+}
+.section-intro h1 span:nth-child(2) {
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-family: "PRIMETIME", sans-serif;
+}
+@media screen and (max-width: 590px) {
+  .section-intro h1 span:nth-child(2) {
+    font-size: 14px;
+  }
+}
+.section-intro h1 span:nth-child(3) {
+  font-size: 30px;
+  font-family: "Muro", sans-serif;
+}
+@media screen and (max-width: 590px) {
+  .section-intro h1 span:nth-child(3) {
+    font-size: 18px;
+  }
+}
+.section-intro-infos {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: 16px;
+}
+.section-intro-infos-ligne {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 16px;
+}
+.section-intro-infos-ligne-picto, .section-intro-infos-ligne-texte {
+  padding: 8px;
+}
+.section-intro-infos-ligne-picto {
+  width: 34%;
+}
+.section-intro-infos-ligne-texte {
+  width: 66%;
+}
+@media screen and (max-width: 590px) {
+  .section-intro-infos-ligne {
+    flex-direction: column;
+  }
+  .section-intro-infos-ligne-picto, .section-intro-infos-ligne-texte {
+    padding: 0px;
+    margin: 0px;
+  }
+  .section-intro-infos-ligne-picto {
+    width: 50%;
+  }
+  .section-intro-infos-ligne-texte {
+    width: 100%;
+  }
+}
+.section-intro-photos img {
+  border-radius: 2px;
+  cursor: pointer;
+}
+.section-intro-photos-ligne-1 {
+  max-height: 500px;
+  margin-bottom: 16px;
+}
+.section-intro-photos-ligne-1 img {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.section-intro-photos-ligne-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-intro-photos-ligne-2 img {
+  width: 48%;
+}
+.section-cours, .section-exclu, .section-niveaux, .section-coaching, .section-split, .section-tarifs, .section-contacts {
+  margin-top: 128px;
+}
+.section-cours-titre, .section-exclu-titre, .section-niveaux-titre, .section-coaching-titre, .section-split-titre, .section-tarifs-titre, .section-contacts-titre {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 6px;
+  border-image-source: linear-gradient(to right, #2fa9f3, #92f0fe);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -19px;
+}
+.section-cours-titre h2, .section-exclu-titre h2, .section-niveaux-titre h2, .section-coaching-titre h2, .section-split-titre h2, .section-tarifs-titre h2, .section-contacts-titre h2 {
+  color: #92f0fe;
+  text-align: center;
+  font-family: "Lalezar", system-ui;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 38px;
+  margin-top: 8px;
+  /* span{
+      font-family: 'Muro', sans-serif;
+      font-size : 34px;
+      //font-weight:900;
+      margin:0px;
+      //text-decoration: underline;
+  } */
+}
+.section-cours-infos, .section-exclu-infos, .section-niveaux-infos, .section-coaching-infos, .section-split-infos, .section-tarifs-infos, .section-contacts-infos {
+  margin-top: 16px;
+}
+.section-cours h3, .section-exclu h3, .section-niveaux h3, .section-coaching h3, .section-split h3, .section-tarifs h3, .section-contacts h3 {
+  color: #2fa9f3;
+}
+.section-cours img, .section-exclu img, .section-niveaux img, .section-coaching img, .section-split img, .section-tarifs img, .section-contacts img {
+  cursor: pointer;
+}
+.section-cours p span, .section-exclu p span, .section-niveaux p span, .section-coaching p span, .section-split p span, .section-tarifs p span, .section-contacts p span {
+  color: #92f0fe;
+  font-weight: 500;
+}
+.section-cours-infos i {
+  color: #2fa9f3 !important;
+}
+.section-cours-infos li {
+  color: white !important;
+}
+.section-niveaux-infos {
+  padding-top: 8px;
+}
+.section-niveaux-infos article {
+  margin-top: 16px;
+}
+.section-niveaux h3 {
+  font-family: "MURO", sans-serif;
+  letter-spacing: 0.1em;
+  margin: 0px;
+  text-align: center;
+}
+.section-tarifs-infos article {
+  margin-top: 16px;
+}
+.section-tarifs-infos article p {
+  border-bottom: 1px solid white;
+  font-size: 18px;
+}
+.section-tarifs-infos article table {
+  color: #92f0fe;
+  width: 100%;
+}
+.section-tarifs-infos article table tr td {
+  text-align: right;
+  width: 50%;
+}
+.section-tarifs-infos article table tr :nth-child(2) {
+  color: white;
+  border-bottom: 1px dotted #92f0fe;
+}
+.section-tarifs-infos article table tr th {
+  color: #bbb !important;
+  text-align: right;
+  width: 50%;
+}
+.section-tarifs-infos article pre {
+  color: #bbb;
+}
+.section-contacts-infos article h5, .section-contacts-infos article h6 {
+  color: white !important;
+}
+
+.sunset {
+  width: 66%;
+  margin: 16px auto;
+  padding: 16px;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, rgb(80, 140, 210), rgb(200, 230, 240), rgb(245, 190, 45), rgb(180, 65, 10), rgb(0, 0, 0));
+  padding: 96px 32px;
+  /* Responsive */
+}
+@media screen and (max-width: 750px) {
+  .sunset {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .sunset {
+    width: 90%;
+  }
+}
+.sunset article {
+  border: 1px solid rgba(255, 255, 255, 0.644);
+  border-radius: 4px;
+  padding: 16px;
+}
+.sunset article h3 {
+  font-family: "Lalezar", system-ui;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: black !important;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.sunset article p {
+  color: #222;
+  font-weight: 500;
+}
+.sunset article img {
+  height: 80px;
+  filter: saturate(0);
+  filter: brightness(20%);
+}
+
+.ancre-deportee {
+  margin-bottom: 128px;
+}
+
+/* #bal_cours{
+    h3{
+        color:$gris-3
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-1, $color-gr-2);
+        }
+        h4,i{
+            color:white;
+        }
+        p{
+            color:$gris-2;
+        }
+        li{
+            color:$bleu-ciel;
+        }
+    }
+}
+
+#bal_3ans{
+    h3{
+        color:$color-gr-3
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-3, $color-gr-4);
+        }
+        p{
+            color:$gris-8;
+        }
+
+    }
+} */
+/* #bal_niveaux{
+    h3{
+        color:$color-gr-4
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-4, $color-gr-5);
+            p,h5{
+                color:$gris-8;
+            }
+        }
+        p{
+            color:$gris-2;
+        }
+        h5{
+            text-transform: uppercase;
+            color : $bleu-ciel
+        }
+
+    }
+}
+
+#bal_gallerie{
+    h3{
+        color:$color-gr-5
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-5, $color-gr-6);
+            p{
+                color:$gris-9;
+            }
+        }
+
+    }
+} */
+/* #bal_split{
+    h3{
+        color:$color-gr-6
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-6, $color-gr-7, $color-gr-8, $color-gr-9);
+            p{
+                color:$gris-9;
+            }
+        }
+
+    }
+    .zone-infos-prepa{
+        .row{
+            img{
+                width: 50%;
+                max-width:80px;
+            }
+
+        }
+        .txt-prepa{
+            border-top: 1px solid $color-gr-8;
+            background-color: $gris-9;
+            color : mix($color-gr-8,$color-gr-9,70%);
+        }
+    }
+}
+
+#bal_tarifs{
+    h3{
+        color:$color-gr-9
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-9, $color-gr-10, $color-gr-10);
+            p{
+                color:$gris-3;
+                display: block;
+                border-bottom: 1px solid $gris-3;
+            }
+        }
+        table{
+            width: 100%;
+            td{
+                width:50%;
+                color : lighten($color-gr-8,20%);
+                &:nth-child(2){
+                    border-bottom: 1px dashed $gris-5;
+                }
+            }
+            th{
+                color : $gris-2;
+            }
+        }
+        tr{
+            width:100%;
+            text-align: right;
+        }
+        pre{
+            text-align: right;
+            color:$gris-4;
+        }
+    }
+
+}
+
+#bal_contacts{
+    h3{
+        color:$gris-8
+    }
+    .bg__centre--noir{
+        .zone-info{
+            background-image: linear-gradient(to bottom , $color-gr-4, $color-gr-6);
+            p,a{
+                color:$gris-8;
+            }
+            h5{
+                text-decoration: none;
+            }
+            h3{
+                text-decoration: underline;
+                padding-bottom: 20px;
+            }
+        }
+
+    }
+
+}
+ */
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+/*# sourceMappingURL=style.css.map */
