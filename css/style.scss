@@ -10,6 +10,9 @@ $bleu-9 : darken($bleu-5,40%);
 $bleu-10 : darken($bleu-5,50%);
 $bleu-ciel : #87CEEB;
 
+$bleu-azur:#2fa9f3;
+$bleu-fluo:#92f0fe;
+
 
 
 $gris-base : hsl(0, 0%, 50%);
@@ -59,6 +62,8 @@ body{
 .justified{
     text-align: justify;
 }
+
+
 
 
 .intro{
@@ -151,7 +156,7 @@ section{
 
         
         h1{
-            background: linear-gradient(120deg,#2fa9f3,#2fa9f3, #92f0fe, #92f0fe);
+            background: linear-gradient(120deg,$bleu-azur,$bleu-azur, $bleu-fluo, $bleu-fluo);
            // background: -webkit-linear-gradient(#eee, #333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -224,6 +229,9 @@ section{
             flex-direction: column;
             padding:16px;
             margin-top:16px;
+            b{
+                color:$bleu-fluo !important;
+            }
             &-ligne{
                 display: flex;
                 align-items: center;
@@ -238,6 +246,10 @@ section{
                 }
                 &-texte{
                     width:66%;
+                    b{
+                        color:$bleu-fluo;
+                    }
+                    
                 }
                 @media screen and (max-width:$breakpoint2){
                     flex-direction: column;
@@ -295,7 +307,7 @@ section{
             border: 10px solid;
             border-image-slice: 1;
             border-width: 6px;
-            border-image-source: linear-gradient(to right, #2fa9f3, #92f0fe);
+            border-image-source: linear-gradient(to right, $bleu-azur, $bleu-fluo);
             border-left: 0;
             border-right: 0;
             border-bottom: 0;
@@ -303,8 +315,8 @@ section{
             
             margin-top: -19px;
             h2{
-                //color:#2fa9f3/* , #92f0fe */;
-                color:#92f0fe ;
+                //color:$bleu-azur/* , $bleu-fluo */;
+                color:$bleu-fluo ;
                 text-align: center;
                 //font-family: 'Lalezar', sans-serif;
                 font-family: "Lalezar", system-ui;
@@ -329,7 +341,7 @@ section{
         }
 
         h3{
-            color:#2fa9f3/* , #92f0fe */ ;
+            color:$bleu-azur/* , $bleu-fluo */ ;
         }
 
         img{
@@ -338,7 +350,7 @@ section{
 
         p{
             span{
-                color:#92f0fe;
+                color:$bleu-fluo;
                 font-weight: 500;
             }
         }
@@ -350,7 +362,7 @@ section{
         &-infos{
             i{
                 //color:$color-gr-7 !important;
-                color:#2fa9f3/* , #92f0fe */ !important;
+                color:$bleu-azur/* , $bleu-fluo */ !important;
             }
             li{
                 color:white !important;
@@ -389,7 +401,7 @@ section{
                     font-size:18px;
                 }
                 table{
-                    color:#92f0fe;
+                    color:$bleu-fluo;
                     width:100%;
                     
                     tr{
@@ -400,7 +412,7 @@ section{
                         
                         :nth-child(2){
                             color:white ;
-                        border-bottom: 1px dotted #92f0fe;
+                        border-bottom: 1px dotted $bleu-fluo;
                         }
                         th{
                             color:#bbb !important;

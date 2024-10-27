@@ -174,6 +174,9 @@ section h5 {
   padding: 16px;
   margin-top: 16px;
 }
+.section-intro-infos b {
+  color: #92f0fe !important;
+}
 .section-intro-infos-ligne {
   display: flex;
   align-items: center;
@@ -189,6 +192,9 @@ section h5 {
 }
 .section-intro-infos-ligne-texte {
   width: 66%;
+}
+.section-intro-infos-ligne-texte b {
+  color: #92f0fe;
 }
 @media screen and (max-width: 590px) {
   .section-intro-infos-ligne {

@@ -67,7 +67,7 @@ define("_prepa1"," <b class='capital'>Training and practice </b> for French or f
 
 define("_tarifstitre","Rates");
 define("_tarifsparticulier","Private lessons (2 pers.)");
-define("_tarifsduree","Time");
+define("_tarifsduree","Duration");
 define("_tarifsprix","Rate");
 define("_tarifsheure","Hour");
 define("_tarifsheures","Hours");
